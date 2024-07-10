@@ -19,8 +19,9 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 100px 1fr 2fr;
+    grid-template-columns: 150px auto;
     justify-content: space-between;
+    grid-gap: 1rem;
     align-items: center;
     padding: 10px 20px;
     background-color: #b3a4d0;
@@ -29,18 +30,18 @@ header {
 header img {
     height: 60px;
 }
+
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--heading-font);
+}
     
-}
 nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    display: grid;
-    grid-template-columns: auto;
+    background-color: var(--accent1-color);
+    padding: 1rem 1rem;
 }
-
 
 article {
     display: flex;
@@ -74,9 +75,7 @@ figcaption {
     
 }
 
-h2 {
-    text-align: center;
-}
+
 
 footer {
     background-color: #b3a4d0;
