@@ -126,3 +126,7 @@ footer img {
     display: grid;
 }   
 
+.employee img{
+    width: 250px;
+    height: auto;
+}
