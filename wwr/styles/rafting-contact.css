@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #ff9800;
+    --primary-color: #b3a4d0;
+    --secondary-color: #d4c6e0;
+    --accent-color: #c0c0c0;
     --text-color: #333;
     --background-color: #f4f4f4;
 }
@@ -18,13 +19,11 @@ body {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
+    display: flex;
     justify-content: space-between;
-    grid-gap: 1rem;
     align-items: center;
     padding: 10px 20px;
-    background-color: #b3a4d0;
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -33,14 +32,30 @@ header img {
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--heading-font);
+    gap: 10px;
 }
-    
+
 nav a {
-    background-color: var(--accent1-color);
-    padding: 1rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1em;
 }
 
 article {
@@ -59,26 +74,40 @@ article img {
 
 section {
     margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content img {
+    margin: 0 10px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
 }
 
 figure {
-    border: thin #c0c0c0 solid;
-    display: grid;
-    flex-flow: column 100px 100px;
-    padding: 5px;
+    border: thin solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     max-width: 220px;
     margin: auto;
-  }
-
-figcaption {
-    text-align: center
-    
 }
 
-
+figcaption {
+    text-align: center;
+}
 
 footer {
-    background-color: #b3a4d0;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -90,41 +119,13 @@ footer {
 footer a {
     margin: 0 10px;
     text-decoration: none;
+    color: white;
 }
 
 footer img {
     height: 30px;
     vertical-align: middle;
 }
-
-
-
-.hero {
-    text-align: center;
-    background-color: #d4c6e0;
-    padding: 20px;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-.section-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section-content img {
-    margin: 0 10px;
-    width: 150px;
-    height: 150px;
-    background-color: #b3a4d0;
-}
-
-.grid-container {
-    display: grid;
-}   
 
 .employee img{
     width: 250px;
