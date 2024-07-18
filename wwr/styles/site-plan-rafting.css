@@ -5,6 +5,8 @@
     --secondary-color: #ff9800;
     --text-color: #333;
     --background-color: #f4f4f4;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
 }
 
 body {
@@ -35,12 +37,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--heading-font);
 }
-    
+
 nav a {
     background-color: var(--accent1-color);
-    padding: 1rem 1rem;
+    padding: 1rem;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 article {
@@ -55,6 +64,8 @@ article {
 article img {
     margin-left: 20px;
     width: 150px;
+    height: auto;
+    object-fit: cover;
 }
 
 section {
@@ -68,14 +79,11 @@ figure {
     padding: 5px;
     max-width: 220px;
     margin: auto;
-  }
-
-figcaption {
-    text-align: center
-    
 }
 
-
+figcaption {
+    text-align: center;
+}
 
 footer {
     background-color: #b3a4d0;
@@ -97,8 +105,6 @@ footer img {
     vertical-align: middle;
 }
 
-
-
 .hero {
     text-align: center;
     background-color: #d4c6e0;
@@ -118,15 +124,17 @@ footer img {
 .section-content img {
     margin: 0 10px;
     width: 150px;
-    height: 150px;
+    height: auto;
     background-color: #b3a4d0;
+    object-fit: cover;
 }
 
 .grid-container {
     display: grid;
-}   
+}
 
-.employee img{
+.employee img {
     width: 250px;
     height: auto;
+    object-fit: cover;
 }
