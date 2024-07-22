@@ -15,13 +15,13 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
 }
 
 header {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: auto;
     justify-content: space-between;
     grid-gap: 1rem;
     align-items: center;
@@ -75,7 +75,6 @@ section {
 figure {
     border: thin #c0c0c0 solid;
     display: grid;
-    flex-flow: column 100px 100px;
     padding: 5px;
     max-width: 220px;
     margin: auto;
