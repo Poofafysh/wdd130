@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
 
 /* Header, Grid, Footer */
-header, .grid, footer {
-    max-width: 840px; /* Previously had max-width: auto which is invalid */
+header, footer, .grid {
+    max-width: 840px;
     margin: 0 auto;
 }
+
 
 /* Header */
 header {
