@@ -1,0 +1,136 @@
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ff9800;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    justify-content: space-between;
+    grid-gap: 1rem;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b3a4d0;
+}
+
+header img {
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+article img {
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+section {
+    margin: 20px 0;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: grid;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: #b3a4d0;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.hero {
+    text-align: center;
+    background-color: #d4c6e0;
+    padding: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-content img {
+    margin: 0 10px;
+    width: 150px;
+    height: auto;
+    background-color: #b3a4d0;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.employee img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
